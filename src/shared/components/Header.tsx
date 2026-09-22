@@ -7,7 +7,7 @@ import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { Link, useLocation } from "react-router-dom";
 import { appRoutes } from "../constants/routes";
-import { useWalletAddress } from "../hooks/useWalletAddr";
+import { useWalletAddress } from "@filedgr/web-core/auth";
 
 export const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
