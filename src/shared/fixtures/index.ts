@@ -2,19 +2,19 @@
 // fall back to these when the template API (or the vault's IPFS content)
 // can't be reached, so the documentation pages always have something to show.
 import type { AttachmentModel } from "@/containers/attachments/types";
-import artworkDocumentation from "./artwork-documentation.pdf?no-inline";
-import artistStatement from "./artist-statement.pdf?no-inline";
+import appraisalReport from "./appraisal-report.pdf?no-inline";
 import certificateOfAuthenticity from "./certificate-of-authenticity.pdf?no-inline";
-import creationProcess from "./creation-process.pdf?no-inline";
+import insuranceDocumentation from "./insurance-documentation.pdf?no-inline";
+import originDocumentation from "./origin-documentation.pdf?no-inline";
 
 /** Prefix marking a file `cid` as a bundled fixture rather than an IPFS CID. */
 const FIXTURE_CID_PREFIX = "fixture:";
 
 const fixtureFileUrls: Record<string, string> = {
   "certificate-of-authenticity.pdf": certificateOfAuthenticity,
-  "artist-statement.pdf": artistStatement,
-  "creation-process.pdf": creationProcess,
-  "artwork-documentation.pdf": artworkDocumentation,
+  "appraisal-report.pdf": appraisalReport,
+  "origin-documentation.pdf": originDocumentation,
+  "insurance-documentation.pdf": insuranceDocumentation,
 };
 
 export const isFixtureCid = (cid: string) => cid.startsWith(FIXTURE_CID_PREFIX);
@@ -58,30 +58,30 @@ export const fixtureAttachments: AttachmentModel[] = [
   fixtureAttachment(
     1,
     "Certificate of Authenticity",
-    "Confirms the originality of The Masterpiece and anchors its records in the Filedgr vault.",
+    "Confirms the natural pink diamonds and anchors the turtle's records in the Filedgr vault.",
     "certificate-of-authenticity.pdf",
-    "2025-06-15T10:00:00Z"
+    "2025-06-30T10:00:00Z"
   ),
   fixtureAttachment(
     2,
-    "Artist Statement",
-    "The artist's intent and the inclusive creativity programme behind the work.",
-    "artist-statement.pdf",
-    "2025-06-16T10:00:00Z"
+    "Appraisal Report",
+    "Independent replacement-value appraisal of the stones and setting.",
+    "appraisal-report.pdf",
+    "2025-06-20T10:00:00Z"
   ),
   fixtureAttachment(
     3,
-    "Creation Process",
-    "From clay study to seven synchronised digital loops.",
-    "creation-process.pdf",
-    "2025-06-17T10:00:00Z"
+    "Origin Documentation",
+    "Kimberley Process certified chain of custody from rough to finished piece.",
+    "origin-documentation.pdf",
+    "2025-06-18T10:00:00Z"
   ),
   fixtureAttachment(
     4,
-    "Artwork Documentation",
-    "Installation, dimensions and condition of the seven-screen sculpture.",
-    "artwork-documentation.pdf",
-    "2025-06-18T10:00:00Z"
+    "Insurance Documentation",
+    "All-risks cover in storage, on exhibition and in transit.",
+    "insurance-documentation.pdf",
+    "2025-06-25T10:00:00Z"
   ),
 ];
 
