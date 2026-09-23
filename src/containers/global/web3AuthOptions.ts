@@ -1,4 +1,4 @@
-// Artech's Web3Auth (v10) configuration, injected into the shared
+// Aquaduct's Web3Auth (v10) configuration, injected into the shared
 // @filedgr/web-core/auth provider via its `buildOptions` prop.
 import JSONFile from "@/json/ledger.json";
 import { getClientIdForEnv } from "@/shared/utils/envHelper";

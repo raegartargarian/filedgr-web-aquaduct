@@ -1,5 +1,5 @@
 // Zip extraction comes from @filedgr/web-core (worker-backed, with a
-// main-thread fallback). Only the Artech-specific shaping stays here: telling a
+// main-thread fallback). Only the Aquaduct-specific shaping stays here: telling a
 // model-documentation bundle from a code repository and building the folder
 // tree for the latter.
 import type { FileStructure } from "@/containers/attachmentDetail/types";

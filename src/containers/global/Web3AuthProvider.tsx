@@ -1,7 +1,7 @@
 // src/containers/global/Web3AuthProvider.tsx
 //
 // The Web3Auth (v10) session lifecycle — async rehydration on refresh, user
-// normalization, login/logout — lives in @filedgr/web-core/auth. Artech's
+// normalization, login/logout — lives in @filedgr/web-core/auth. Aquaduct's
 // env/chain configuration (./web3AuthOptions) is injected through the core
 // provider's `buildOptions` prop, and the context hook is re-exported so
 // existing imports (`@/containers/global/Web3AuthProvider`) keep working.

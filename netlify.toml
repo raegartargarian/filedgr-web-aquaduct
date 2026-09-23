@@ -1,4 +1,4 @@
-# Netlify build for filedgr-web-artech.
+# Netlify build for filedgr-web-aquaduct.
 #
 # @filedgr/web-core is a private GitHub Packages dependency: set NODE_AUTH_TOKEN
 # (a token with read:packages) in the Netlify site's environment variables so
